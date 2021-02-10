@@ -6,7 +6,7 @@ Git start:
 - cd desktop/itec3020/git1/. (Let git know where to open the file:)
 - git status
 - touch name.file to (to add new file)
-- git add name.file
+- git add name.file (or just write git add . To add everything in the folder)
 - git status
 - git commit -m"message you want to say"
 - git push  -u origin master (to push to remote repository)
