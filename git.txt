@@ -1,0 +1,12 @@
+Git start:
+- let git know what user name and email address you are working on
+- git config --global user.name"tsuon"
+- git config --global user.email"thatsuon@yahoo.com"
+
+- cd desktop/itec3020/git1/. (Let git know where to open the file:)
+- git status
+- touch name.file to (to add new file)
+- git add name.file
+- git status
+- git commit -m"message you want to say"
+- git push  -u origin master (to push to remote repository)
