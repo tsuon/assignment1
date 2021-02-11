@@ -1,10 +1,9 @@
+
 body {
     background-color: #F4F4F4
     
 }
-h1 {
-    margin: 10px;  
-}
+
 ul{
     list-style-type: none;
     padding: 0;
@@ -12,46 +11,93 @@ ul{
     overflow: hidden;
     
 }
-li {
-    float: left;
-}
+
 
 li a {
     display: block;
-    color: #000;
+    color: dimgray;
     padding: 8px;
     text-decoration: none;
     
 }
-/*li a:hover {
-  background-color: #017984;
-}*/
 
-#container{
-    margin-right: auto;
-    margin-left: auto;
-    width:1600px;
-    background-color: #F4F4F4;
-    padding 10px;
-}
 /*==== Logo and menu bar ====*/
 .container-fluid{
-    background: #017984;
+    background: #7Fccea;
 }
 
-    
+/*==== Logo and menu bar END ====*/
+
+/* ==== MAIN Body ===*/
 content {
     padding: 10px;     
 }
 
-
-#nav .selected{
-    font-weight: bold;
-}
 #main{
     margin-left: 10px;
     width: 1600px;
 }
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Will change the column to 100% when reaching 750px */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/*.display {
+  width: 40%;
+  float: left;
+  padding: 15px;
+}
+
+.description {
+  width: 40%;
+  float: left;
+  padding: 15px;
+
+}
+.recentView {
+  width: 20%;
+  float: left;
+  padding: 15px;
+}
+
+/* ==== Main Body END ====*/
+
+
 #footer{
     clear: both
 }
