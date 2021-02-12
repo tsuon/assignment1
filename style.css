@@ -1,9 +1,11 @@
-
+h1{
+    font-size-adjust: 10vw;
+}
 body {
     background-color: #F4F4F4
     
 }
-
+/*take out the bullet point from the ul */
 ul{
     list-style-type: none;
     padding: 0;
@@ -11,15 +13,26 @@ ul{
     overflow: hidden;
     
 }
-
+/*Horizontal menu by using inline*/
+li {
+  float: left;
+}
 
 li a {
-    display: block;
-    color: dimgray;
-    padding: 8px;
+  display: block;
+  padding: 8px;
     text-decoration: none;
-    
 }
+/*can also use li{display: inline} but online the lettle is clickable not the whole block; */
+/*take out the underline from theh link in the li*/
+
+li a:hover {
+  background-color: #77C2FE;
+}
+/*active color for menu that is selected
+.active {
+  background-color: #77C2FE;
+}*/
 
 /*==== Logo and menu bar ====*/
 .container-fluid{
@@ -56,43 +69,40 @@ content {
   float: left;
   padding: 15px;
 }
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/* Will change the column to 100% when reaching 750px */
-@media only screen and (max-width: 768px) {
-  [class*="col-"] {
-    width: 100%;
-  }
+/* priorigtize viewing with mobile devices before look at code for viewing on desktop devices for faster mobile viewing experience */
+/*set column to 100% for Mobile devices*/
+[class*="col-"]{
+    width: 100%
 }
 
-/*.display {
-  width: 40%;
-  float: left;
-  padding: 15px;
+/* Will change the column to assigned size when reaching more than 768 */
+@media only screen and (min-width:768px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
 
-.description {
-  width: 40%;
-  float: left;
-  padding: 15px;
-
-}
-.recentView {
-  width: 20%;
-  float: left;
-  padding: 15px;
+/*create buy now button */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /* ==== Main Body END ====*/
