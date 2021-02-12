@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PlanetCorals.comm</title>
+    <title>PlanetCorals.com</title>
     <meta charset="UTF-8">
     <!==== to ensure proper rendering and touch zooming, add the following meta viewport ====>
     <meta name="viewport" content="width=device=width, initial-scale=1">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel ="stylesheet" type ="text/css" href = "style.css"/>
   
@@ -17,13 +16,15 @@
     
 <div class="container-fluid"> <!container-fluid will allow to span the entire width of the viewport>
     <img src="img/LOGO-1.png" style="max-width:40%;">
-    <ul>
-        <li><a class="active" href=""><i class="fa fa-fw fa-home"></i>Home</a></li>
-        <li><a href="#">Corals</a></li>
-        <li><a href="#">Dry Goods</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-    
+    <div class="topnav">
+  <a class="active" href=""><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="#about">Corals</a>
+  <a href="#contact">Dry Goods</a>
+  <a href="#">About</a>
+
+  <input type="text" placeholder="Search..">
+  <a href=""><i class="fa fa-shopping-cart"></i></a>
+</div>
         
         
 </div>
@@ -33,29 +34,28 @@
     
     <div id= "container">
         <div class="col-5 display">
-            <img src="img/BigR-Space-Chaos-IMG_1417.jpg" style="max-width:90%;height:auto;"> <!use max-width to scale up to 90% of its original image if it can but not bigger>
+            <img src="img/BigR-Space-Chaos-IMG_1417.jpg" alt="no image" style="max-width:90%;height:auto;"> <!use max-width to scale up to 90% of its original image if it can but not bigger>
         </div>
         <div class="col-4 description">
             <h1>Illuminati Zoanthid</h1>
+            <h3>$59.99</h3>
             <p>Originated from the islands of the Indopacific, this Illuminati Zoanthid has alternating purple and bright orange tentacles, with bright orange speckled face and baby blue mouth. Frag of this Illuminati Zoanthid have between 1-2 polyps.<br>
                 <br><b>Care Requirement:</b>
                 <br>☀️  Light: Medium
                 <br>🌊  Flow: Strong
                 <br>🩺  Care: Easy.</p>
             <button class="button">Buy Now</button>
+            <button class="button">Buy Bundle</button>
         </div>
         <div class="col-3 recentView">
-            <h4>Recent View</h4>
+            <h4>Related Product</h4>
             <img src="img/Sunny-D-Zoanthid-Full-Spectrum-3150243.jpg" alt="no image" WIDTH=100 HEIGHT=100><br>
             <img src="img/Illuminati-IMG_1620.jpg" alt="no image" WIDTH=100 HEIGHT=100><br>
-            <img src="img/Speckled-Krak-2.jpg" alt="no image" WIDTH=100 HEIGHT=100><br>
-            
-        </div>
-        
-        
+            <img src="img/Speckled-Krak-2.jpg" alt="no image" WIDTH=100 HEIGHT=100><br>  
+    
+    </div>
 
-       
-        <div id ="footer">
+     <div id ="footer">
             Copyright &copy; PlanetCorals 2021
                 <ul>
                     <li><a class= "selected" href="">Contact</a></li>
@@ -64,8 +64,6 @@
                 </ul>
         </div>
         
-    
-    </div>
 </body>
     
     
